@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>お問い合わせ | company.example.com</title>
+    <meta
+      name="description"
+      content="北海道の民泊運営代行・民泊コンサル相談用お問い合わせページの静的プロトタイプ。"
+    >
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="site company">
+    <header class="site-header" data-wp-section="company-header">
+      <div class="header-inner">
+        <a class="brand" href="../" aria-label="companyトップへ戻る">
+          <span class="brand-mark">S</span>
+          <span>
+            <span class="brand-name">シマエナガ民泊運営サポート</span>
+            <span class="brand-sub">Management / Consulting</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="お問い合わせナビゲーション">
+          <a href="../management/">運営代行</a>
+          <a href="../startup-support/">立ち上げ支援</a>
+          <a href="../beds24-ota/">Beds24・OTA</a>
+          <a href="../company/">会社概要</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-wp-section="company-contact-hero">
+        <div class="section-inner hero-grid">
+          <div>
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+              <a href="../">companyトップ</a>
+              <span>お問い合わせ</span>
+            </nav>
+            <p class="eyebrow">Contact</p>
+            <h1>民泊運営について相談する</h1>
+            <p class="lead">
+              運営代行、立ち上げ支援、Beds24導入・OTA運用について、物件状況や相談内容を送れる専用フォームを想定します。
+            </p>
+          </div>
+          <figure class="hero-photo">
+            <img src="../../assets/hero-hokkaido-shimaenaga.png" alt="北海道の民泊運営相談を想起させる静かなビジュアル">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-snow" data-wp-section="company-contact-before">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Before Contact</p>
+            <h2>相談前に分かるとよいこと</h2>
+            <p>すべて未確定でも相談できる設計にします。フォームでは、分かる範囲で入力できる項目にします。</p>
+          </div>
+          <ul class="scope-list grid grid-3">
+            <li><strong>物件エリア</strong>札幌、ニセコ、その他北海道内など、おおまかな場所</li>
+            <li><strong>相談段階</strong>開業前、運営中、Beds24導入検討中などの状況</li>
+            <li><strong>困っていること</strong>集客、清掃、ゲスト対応、OTA管理、価格設定など</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-dark" data-wp-section="company-contact-form">
+        <div class="section-inner hero-grid">
+          <div>
+            <p class="eyebrow">Form</p>
+            <h2>お問い合わせフォーム</h2>
+            <p class="lead">
+              WordPress化時にフォームプラグイン、または外部フォームへ差し替えます。静的プロトタイプでは送信処理を実装しません。
+            </p>
+          </div>
+          <div
+            class="form-box"
+            data-form-replace="company-contact-page-form"
+            role="region"
+            aria-label="民泊運営相談 お問い合わせフォーム設置予定エリア"
+          >
+            <strong>Contact Form Area</strong>
+            <p>お名前、会社名、メールアドレス、物件エリア、相談種別、相談内容を送れるフォームへ差し替えます。</p>
+            <div class="form-fields">
+              <div class="fake-field">お名前</div>
+              <div class="fake-field">会社名 / 屋号</div>
+              <div class="fake-field">メールアドレス</div>
+              <div class="fake-field">物件エリア</div>
+              <div class="fake-field">相談種別</div>
+              <div class="fake-field fake-field-large">相談内容</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-wp-section="company-contact-routing">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>相談内容に近いページ</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="support-card">
+              <span class="number">01</span>
+              <h3>民泊運営代行</h3>
+              <p>運営中の物件で、日々の対応やOTA管理を相談したい方向け。</p>
+              <p><a class="button-link" href="../management/">詳しく見る</a></p>
+            </article>
+            <article class="support-card">
+              <span class="number">02</span>
+              <h3>民泊立ち上げ支援</h3>
+              <p>これから民泊を始める前に、準備項目を整理したい方向け。</p>
+              <p><a class="button-link" href="../startup-support/">詳しく見る</a></p>
+            </article>
+            <article class="support-card">
+              <span class="number">03</span>
+              <h3>Beds24・OTA運用</h3>
+              <p>予約管理、公式予約導線、OTA連携を整えたい方向け。</p>
+              <p><a class="button-link" href="../beds24-ota/">詳しく見る</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>&copy; シマエナガ民泊運営サポート</span>
+        <div class="footer-links">
+          <a href="../">companyトップ</a>
+          <a href="../company/">会社概要</a>
+          <a href="../management/">運営代行</a>
+          <a href="../startup-support/">立ち上げ支援</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

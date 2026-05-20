@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>アクセス | stay.example.com</title>
+    <meta
+      name="description"
+      content="シマエナガニセコ、シマエナガ札幌の宿泊者向けアクセスまとめページの静的プロトタイプ。"
+    >
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="site stay">
+    <header class="site-header" data-wp-section="stay-header">
+      <div class="header-inner">
+        <a class="brand" href="../" aria-label="宿泊トップへ戻る">
+          <span class="brand-mark">S</span>
+          <span>
+            <span class="brand-name">シマエナガ北海道ステイ</span>
+            <span class="brand-sub">Stay Reservation</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="宿泊アクセスナビゲーション">
+          <a href="../niseko/">ニセコ</a>
+          <a href="../sapporo/">札幌</a>
+          <a href="../faq/">FAQ</a>
+          <a href="#reserve">予約</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-wp-section="stay-access-hero">
+        <div class="section-inner hero-grid">
+          <div>
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+              <a href="../">宿泊トップ</a>
+              <span>アクセス</span>
+            </nav>
+            <p class="eyebrow">Access</p>
+            <h1>ニセコと札幌へのアクセス</h1>
+            <p class="lead">
+              初めて北海道へ来る旅行者にも分かりやすいように、空港、駅、車、公共交通、冬季移動の注意点を整理します。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#reserve">Beds24で空室を確認</a>
+              <a class="button button-secondary" href="../faq/">宿泊FAQを見る</a>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img src="../../assets/hero-hokkaido-shimaenaga.png" alt="北海道の雪景色とアクセス案内のブランドビジュアル">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-snow" id="reserve" data-wp-section="stay-access-reserve">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Beds24</p>
+            <h2>滞在先を選んで空室確認へ</h2>
+            <p>予約、在庫、料金、決済はBeds24側へ接続します。アクセス確認後に予約へ進みやすい導線を置きます。</p>
+          </div>
+          <div
+            class="beds24-box"
+            data-beds24-replace="stay-access-availability-widget"
+            role="region"
+            aria-label="アクセスページ Beds24空室検索ウィジェット設置予定エリア"
+          >
+            <strong>Beds24 Widget Area</strong>
+            <p>施設、日付、人数を選択する空室検索ウィジェットを設置する想定です。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-wp-section="stay-access-overview">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Overview</p>
+            <h2>施設別アクセス</h2>
+            <p>正確な住所や入室方法は予約確定後の案内に合わせ、公開ページでは移動イメージと周辺情報を伝えます。</p>
+          </div>
+          <div class="grid grid-2">
+            <article class="card">
+              <img src="../../assets/facilities/niseko/gallery-01.jpg" alt="シマエナガニセコの客室">
+              <div class="card-body">
+                <p class="meta">Niseko</p>
+                <h3>シマエナガニセコ</h3>
+                <p>ニセコ・倶知安エリア。車移動、冬季の雪道、スキー場や温泉への移動を分かりやすく整理します。</p>
+                <div class="button-row">
+                  <a class="button button-secondary" href="../niseko/">施設詳細</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="../../assets/facilities/sapporo/gallery-01.jpg" alt="シマエナガ札幌のリビング">
+              <div class="card-body">
+                <p class="meta">Sapporo</p>
+                <h3>シマエナガ札幌</h3>
+                <p>札幌市内。最寄り駅、空港からの移動、中心部や近郊観光へのアクセスを整理します。</p>
+                <div class="button-row">
+                  <a class="button button-secondary" href="../sapporo/">施設詳細</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-snow" data-wp-section="stay-access-route">
+        <div class="section-inner split-grid">
+          <div>
+            <p class="eyebrow">Route</p>
+            <h2>移動情報の掲載方針</h2>
+            <dl class="info-list">
+              <div>
+                <dt>空港から</dt>
+                <dd>新千歳空港から札幌・ニセコ方面への移動手段を整理します。</dd>
+              </div>
+              <div>
+                <dt>駅・公共交通</dt>
+                <dd>最寄り駅、バス、タクシーの使い方を施設ごとに案内します。</dd>
+              </div>
+              <div>
+                <dt>車・駐車</dt>
+                <dd>駐車場、冬季の雪道、周辺道路の注意点を確認して掲載します。</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="map-box" aria-label="アクセスまとめ地図設置予定エリア">
+            Area Map Embed
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-wp-section="stay-access-tips">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Tips</p>
+            <h2>北海道旅行の移動で伝えること</h2>
+          </div>
+          <ul class="amenity-list grid grid-3">
+            <li><strong>冬季の時間余裕</strong>雪道や交通遅延を踏まえ、移動時間に余裕を持つ案内にします。</li>
+            <li><strong>買い出し</strong>スーパー、コンビニ、飲食店など、到着前後に必要な情報を整理します。</li>
+            <li><strong>荷物と服装</strong>季節ごとの服装、靴、荷物の注意点をFAQと連動させます。</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <span>&copy; シマエナガ北海道ステイ</span>
+        <div class="footer-links">
+          <a href="../">宿泊トップ</a>
+          <a href="../faq/">FAQ</a>
+          <a href="../niseko/">ニセコ</a>
+          <a href="../sapporo/">札幌</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

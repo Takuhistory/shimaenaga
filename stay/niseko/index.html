@@ -3,269 +3,255 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>シマエナガニセコ | 宿泊予約・施設案内</title>
+    <title>シマエナガニセコ | stay.example.com</title>
     <meta
       name="description"
-      content="シマエナガニセコの施設紹介、写真ギャラリー、設備、アクセス、周辺観光、FAQ。予約はBeds24を利用します。"
+      content="シマエナガニセコの施設紹介、写真ギャラリー、設備、アクセス、周辺観光、FAQ、Beds24予約導線の静的プロトタイプ。"
     >
     <link rel="stylesheet" href="../../styles.css">
   </head>
-  <body>
-    <header class="site-header" aria-label="サイトヘッダー">
-      <a class="brand" href="../../" aria-label="シマエナガ北海道ステイ トップへ">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span>
-          <span class="brand-name">シマエナガ北海道ステイ</span>
-          <span class="brand-sub">Niseko / Sapporo / Minpaku Support</span>
-        </span>
-      </a>
-      <nav class="header-nav" aria-label="主要ナビゲーション">
-        <a href="../">宿泊トップ</a>
-        <a href="../sapporo/">札幌</a>
-        <a href="#gallery">写真</a>
-        <a href="#amenities">設備</a>
-        <a href="#booking">予約</a>
-      </nav>
+  <body class="site stay">
+    <header class="site-header" data-wp-section="stay-header">
+      <div class="header-inner">
+        <a class="brand" href="../" aria-label="stayトップへ戻る">
+          <span class="brand-mark">S</span>
+          <span>
+            <span class="brand-name">シマエナガ北海道ステイ</span>
+            <span class="brand-sub">Stay Reservation</span>
+          </span>
+        </a>
+        <nav class="header-nav" aria-label="シマエナガニセコ ナビゲーション">
+          <a href="#gallery">写真</a>
+          <a href="#amenities">設備</a>
+          <a href="#access">アクセス</a>
+          <a href="../faq/">FAQ</a>
+          <a href="#reserve">予約</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="facility-hero">
-        <div class="facility-hero-media">
-          <img src="../../assets/facilities/niseko/gallery-01.jpg" alt="シマエナガニセコの客室">
-        </div>
-        <div class="facility-hero-content">
-          <nav class="page-breadcrumb" aria-label="パンくず">
-            <a href="../../">トップ</a>
-            <span>/</span>
-            <a href="../">宿泊予約</a>
-            <span>/</span>
-            <span>シマエナガニセコ</span>
-          </nav>
-          <p class="eyebrow">Shimaenaga Niseko</p>
-          <h1>シマエナガニセコ</h1>
-          <p>
-            倶知安駅から徒歩圏内。ニセコのスキー、アクティビティ、長期滞在の拠点として使いやすいホステルスタイルの宿です。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#booking" data-beds24-replace="reservation-link-niseko">Beds24で予約する</a>
-            <a class="button button-secondary" href="#gallery">写真を見る</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="facility-summary" aria-label="施設概要">
-        <div class="section-inner summary-grid">
-          <article>
-            <span>最大人数</span>
-            <strong>6名</strong>
-          </article>
-          <article>
-            <span>タイプ</span>
-            <strong>個室</strong>
-          </article>
-          <article>
-            <span>最寄り</span>
-            <strong>倶知安駅 徒歩約10分</strong>
-          </article>
-          <article>
-            <span>予約</span>
-            <strong>Beds24連携予定</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="booking" aria-labelledby="booking-title">
-        <div class="section-inner booking-layout">
+      <section class="hero" data-wp-section="stay-facility-hero">
+        <div class="section-inner hero-grid">
           <div>
-            <p class="section-kicker">Reservation</p>
-            <h2 id="booking-title">空室確認・予約</h2>
-            <p>
-              予約機能はBeds24を利用します。この仮エリアはWordPress実装時にBeds24公式プラグイン、または埋め込みコードへ差し替えます。
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+              <a href="../">宿泊トップ</a>
+              <span>シマエナガニセコ</span>
+            </nav>
+            <p class="eyebrow">Niseko Stay</p>
+            <h1>シマエナガニセコ</h1>
+            <p class="lead">
+              雪山、森、温泉、季節の自然を楽しむニセコ滞在の拠点。写真と設備を確認してから、Beds24の予約導線へ進めます。
             </p>
-            <div class="inline-actions">
-              <a class="button button-primary" href="#" data-beds24-replace="reservation-button-niseko">Beds24予約ボタン</a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#reserve" data-beds24-replace="reservation-link-niseko">Beds24で予約する</a>
+              <a class="button button-secondary" href="#gallery">写真を見る</a>
             </div>
           </div>
+          <figure class="hero-photo">
+            <img src="../../assets/facilities/niseko/gallery-01.jpg" alt="シマエナガニセコの室内写真">
+          </figure>
+        </div>
+      </section>
+
+      <nav class="detail-nav" aria-label="ページ内ナビゲーション">
+        <div class="section-inner">
+          <a href="#about">施設紹介</a>
+          <a href="#gallery">写真ギャラリー</a>
+          <a href="#amenities">設備・アメニティ</a>
+          <a href="#access">アクセス</a>
+          <a href="#sightseeing">周辺観光</a>
+          <a href="#faq">FAQ</a>
+          <a href="#reserve">予約</a>
+        </div>
+      </nav>
+
+      <section class="section" id="about" data-wp-section="stay-facility-about">
+        <div class="section-inner split-grid">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>ニセコの自然を静かに楽しむ滞在</h2>
+          </div>
+          <div>
+            <p class="lead">
+              グループ旅行、スキー・スノーボード、夏の避暑、長めの北海道滞在まで、旅程に合わせて使いやすい貸切宿として案内します。詳細な定員、寝具、料金、キャンセル条件はBeds24側の最新情報と合わせます。
+            </p>
+            <dl class="summary-list">
+              <div>
+                <dt>滞在イメージ</dt>
+                <dd>ニセコ・倶知安エリア観光、雪山、自然散策の拠点</dd>
+              </div>
+              <div>
+                <dt>予約導線</dt>
+                <dd>Beds24の外部予約ページ、または公式ウィジェットへ接続</dd>
+              </div>
+              <div>
+                <dt>写真更新</dt>
+                <dd>提供写真に差し替え、室内、水回り、寝具、外観を優先</dd>
+              </div>
+              <div>
+                <dt>WordPress化</dt>
+                <dd>SWELLの固定ページ内でセクション単位に移植</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-snow" id="reserve" data-wp-section="stay-facility-reserve">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Beds24</p>
+            <h2>空室と料金を確認する</h2>
+            <p>このエリアはBeds24公式プラグイン、埋め込みコード、または外部予約ページへのボタンに差し替えます。</p>
+          </div>
           <div
-            class="beds24-placeholder"
-            data-beds24-replace="availability-widget-niseko"
+            class="beds24-box"
+            data-beds24-replace="niseko-availability-widget"
             role="region"
             aria-label="シマエナガニセコ Beds24空室検索ウィジェット設置予定エリア"
           >
-            <span class="placeholder-label">Beds24 Widget Area</span>
-            <span>シマエナガニセコ専用の空室検索を設置</span>
+            <strong>Beds24 Widget Area: Niseko</strong>
+            <p>日付、人数、泊数を選んで空室確認に進む想定です。予約、料金計算、決済機能は自作しません。</p>
           </div>
         </div>
       </section>
 
-      <section class="section facility-content" aria-labelledby="intro-title">
-        <div class="section-inner content-grid">
-          <div>
-            <p class="section-kicker">Introduction</p>
-            <h2 id="intro-title">ニセコを手頃に、気持ちよく楽しむための拠点。</h2>
-          </div>
-          <div class="rich-text">
-            <p>
-              夏はサイクリングや自然体験、冬はスキー・スノーボードを楽しみたい方に向いた素泊まりの宿です。個室は施錠でき、共有のリビング・キッチンも利用できます。
-            </p>
-            <p>
-              スーパー、ドラッグストア、飲食店が近く、長めの滞在でも過ごしやすい立地です。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <section class="section" id="gallery" data-wp-section="stay-facility-gallery">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="section-kicker">Gallery</p>
-            <h2 id="gallery-title">写真ギャラリー</h2>
-            <p>正式写真を受け取ったら、同じファイル名で差し替えるだけでページに反映できます。</p>
+            <p class="eyebrow">Gallery</p>
+            <h2>写真ギャラリー</h2>
+            <p>実写真に差し替える前提で、室内の広さ、寝具、水回り、設備が分かる順に配置します。</p>
           </div>
-          <div class="photo-grid">
-            <figure class="photo-large">
-              <img src="../../assets/facilities/niseko/gallery-01.jpg" alt="シマエナガニセコの客室全景">
-              <figcaption>客室</figcaption>
-            </figure>
-            <figure>
-              <img src="../../assets/facilities/niseko/gallery-02.jpg" alt="シマエナガニセコの客室設備">
-              <figcaption>室内設備</figcaption>
-            </figure>
-            <figure>
-              <img src="../../assets/facilities/niseko/gallery-03.jpg" alt="シマエナガニセコの個室">
-              <figcaption>個室</figcaption>
-            </figure>
-            <figure>
-              <img src="../../assets/facilities/niseko/gallery-04.jpg" alt="シマエナガニセコの備品">
-              <figcaption>備品</figcaption>
-            </figure>
-            <figure>
-              <img src="../../assets/facilities/niseko/gallery-05.jpg" alt="シマエナガニセコの共用スペース">
-              <figcaption>共有スペース</figcaption>
-            </figure>
-            <figure>
-              <img src="../../assets/facilities/niseko/gallery-06.jpg" alt="シマエナガニセコの館内写真">
-              <figcaption>館内</figcaption>
-            </figure>
+          <div class="gallery-grid">
+            <img src="../../assets/facilities/niseko/gallery-01.jpg" alt="シマエナガニセコ 写真1">
+            <img src="../../assets/facilities/niseko/gallery-02.jpg" alt="シマエナガニセコ 写真2">
+            <img src="../../assets/facilities/niseko/gallery-03.jpg" alt="シマエナガニセコ 写真3">
+            <img src="../../assets/facilities/niseko/gallery-04.jpg" alt="シマエナガニセコ 写真4">
+            <img src="../../assets/facilities/niseko/gallery-05.jpg" alt="シマエナガニセコ 写真5">
+            <img src="../../assets/facilities/niseko/gallery-06.jpg" alt="シマエナガニセコ 写真6">
           </div>
         </div>
       </section>
 
-      <section class="section" id="amenities" aria-labelledby="amenities-title">
+      <section class="section section-snow" id="amenities" data-wp-section="stay-facility-amenities">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="section-kicker">Amenities</p>
-            <h2 id="amenities-title">設備・アメニティ</h2>
+            <p class="eyebrow">Amenities</p>
+            <h2>設備・アメニティ</h2>
+            <p>最終公開前にBeds24、OTA掲載情報、現地備品と照合します。</p>
           </div>
-          <div class="amenity-grid">
-            <article>
-              <h3>客室</h3>
-              <p>施錠可能な個室、テーブル、暖房、ハンガー、全身鏡。</p>
+          <ul class="amenity-list grid grid-3">
+            <li><strong>キッチン</strong>調理器具、食器、冷蔵庫、電子レンジなどを掲載予定</li>
+            <li><strong>寝具</strong>寝具構成、定員、リネン情報を写真と合わせて整理</li>
+            <li><strong>水回り</strong>バス、トイレ、洗面、洗濯設備の有無を明記</li>
+            <li><strong>通信</strong>Wi-Fiなど、滞在中に必要な情報を掲載</li>
+            <li><strong>駐車</strong>車利用を想定し、駐車場所と台数を確認して掲載</li>
+            <li><strong>冬季情報</strong>暖房、除雪、雪道アクセスの注意点を案内</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="access" data-wp-section="stay-facility-access">
+        <div class="section-inner split-grid">
+          <div>
+            <p class="eyebrow">Access</p>
+            <h2>アクセス</h2>
+            <dl class="info-list">
+              <div>
+                <dt>エリア</dt>
+                <dd>ニセコ・倶知安エリア。正確な住所は予約確定後の案内と整合させます。</dd>
+              </div>
+              <div>
+                <dt>車での移動</dt>
+                <dd>空港、札幌、スキー場方面からの所要時間を確認して掲載します。</dd>
+              </div>
+              <div>
+                <dt>公共交通</dt>
+                <dd>最寄り駅、バス、タクシー利用の案内を整理します。</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="map-box" aria-label="地図設置予定エリア">
+            Google Map Embed Area
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-snow" id="sightseeing" data-wp-section="stay-facility-sightseeing">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Sightseeing</p>
+            <h2>周辺観光</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="support-card">
+              <span class="number">01</span>
+              <h3>雪山・アクティビティ</h3>
+              <p>冬季のスキー、スノーボード、雪景色を楽しむ旅程に合わせて紹介します。</p>
             </article>
-            <article>
-              <h3>共有設備</h3>
-              <p>リビング、キッチン、冷蔵庫、コンロ、調理器具、食器類。</p>
+            <article class="support-card">
+              <span class="number">02</span>
+              <h3>温泉・食事</h3>
+              <p>滞在中に立ち寄りやすい温泉、飲食店、買い出しスポットを整理します。</p>
             </article>
-            <article>
-              <h3>水回り</h3>
-              <p>共有シャワールーム、トイレ、バスルーム、洗面台。</p>
-            </article>
-            <article>
-              <h3>通信・備品</h3>
-              <p>Wi-Fi、ドライヤー、レンタルタオル、周辺コインランドリー案内。</p>
+            <article class="support-card">
+              <span class="number">03</span>
+              <h3>季節の自然</h3>
+              <p>夏の避暑、羊蹄山周辺、ドライブなど季節ごとの過ごし方を提案します。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section access-section" aria-labelledby="access-title">
-        <div class="section-inner content-grid">
-          <div>
-            <p class="section-kicker">Access</p>
-            <h2 id="access-title">アクセス</h2>
+      <section class="section" id="faq" data-wp-section="stay-facility-faq">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>よくある質問</h2>
           </div>
-          <div class="info-panel">
-            <p><strong>所在地：</strong>北海道虻田郡倶知安町北1条西1丁目13-4 一条ビル</p>
-            <p><strong>交通：</strong>倶知安駅から徒歩約10分。ニセコグランヒラフスキー場までは車・バスで約15分。</p>
-            <div class="map-placeholder" aria-label="地図設置予定エリア">
-              Google Map埋め込み予定エリア
+          <div class="faq-list">
+            <article class="faq-card">
+              <h3>チェックイン方法はどこで確認できますか？</h3>
+              <p>予約確定後の案内に合わせて掲載します。セルフチェックインの場合も、写真付きで迷いにくい案内にします。</p>
+            </article>
+            <article class="faq-card">
+              <h3>キャンセル条件はどこで確認できますか？</h3>
+              <p>Beds24またはOTA側の最新条件と整合させます。ページ上では概要のみ掲載し、予約画面で最終確認します。</p>
+            </article>
+            <article class="faq-card">
+              <h3>冬の移動で注意することはありますか？</h3>
+              <p>雪道、駐車、除雪状況など、現地確認後に案内を追加します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-snow" data-wp-section="stay-facility-final-cta">
+        <div class="section-inner">
+          <div class="cta-panel">
+            <p class="eyebrow">Reservation</p>
+            <h2>シマエナガニセコの空室を確認する</h2>
+            <p>予約手続きはBeds24側で行います。公式サイト内では予約システムを自作しません。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#reserve" data-beds24-replace="reservation-link-niseko-bottom">Beds24で予約する</a>
+              <a class="button button-secondary" href="../">宿泊トップへ戻る</a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section tourism-section" aria-labelledby="tourism-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-kicker">Around</p>
-            <h2 id="tourism-title">周辺観光</h2>
-          </div>
-          <div class="spot-grid">
-            <article>
-              <h3>ニセコグランヒラフ</h3>
-              <p>冬のスキー・スノーボード、夏の自然体験の中心になるエリア。</p>
-            </article>
-            <article>
-              <h3>倶知安市街</h3>
-              <p>スーパー、飲食店、ドラッグストアが近く、滞在中の買い物に便利です。</p>
-            </article>
-            <article>
-              <h3>温泉・自然散策</h3>
-              <p>ニセコエリアらしい温泉、山景、アクティビティを楽しめます。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section faq-section" aria-labelledby="faq-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-kicker">FAQ</p>
-            <h2 id="faq-title">よくある質問</h2>
-          </div>
-          <div class="faq-grid">
-            <article>
-              <h3>予約はどこで行いますか？</h3>
-              <p>公式サイト上のBeds24予約ボタン、または空室検索ウィジェットから予約できる想定です。</p>
-            </article>
-            <article>
-              <h3>キッチンは使えますか？</h3>
-              <p>共有キッチンを利用できます。利用時間やルールは施設案内に合わせて掲載します。</p>
-            </article>
-            <article>
-              <h3>長期滞在はできますか？</h3>
-              <p>長期滞在向けの案内を掲載します。正式な料金や条件はBeds24側の設定と連動させます。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section related-section" aria-labelledby="related-title">
-        <div class="section-inner related-layout">
-          <div>
-            <p class="section-kicker">Next</p>
-            <h2 id="related-title">ほかのページへ進む</h2>
-          </div>
-          <div class="related-links">
-            <a class="related-link-card" href="../">
-              <span>宿泊予約トップ</span>
-              <strong>施設一覧へ戻る</strong>
-            </a>
-            <a class="related-link-card" href="../sapporo/">
-              <span>シマエナガ札幌</span>
-              <strong>札幌の施設を見る</strong>
-            </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="section-inner footer-layout">
-        <p>&copy; シマエナガ北海道ステイ</p>
-        <div class="footer-links" aria-label="フッターリンク">
-          <a href="../">宿泊予約トップ</a>
+      <div class="section-inner footer-inner">
+        <span>&copy; シマエナガ北海道ステイ</span>
+        <div class="footer-links">
+          <a href="../">宿泊トップ</a>
           <a href="../sapporo/">シマエナガ札幌</a>
+          <a href="../access/">アクセス</a>
+          <a href="../faq/">FAQ</a>
+          <a href="#reserve">予約</a>
         </div>
       </div>
     </footer>
