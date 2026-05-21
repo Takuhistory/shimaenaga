@@ -669,6 +669,10 @@ h3 {
   width: min(100% - 32px, 1180px);
 }
 
+.niseko-resort [id] {
+  scroll-margin-top: 138px;
+}
+
 .niseko-header {
   border-bottom: 1px solid rgba(51, 86, 107, 0.12);
   background: rgba(246, 248, 248, 0.86);
@@ -714,6 +718,12 @@ h3 {
 
 .niseko-header-nav a:hover {
   color: var(--niseko-blue-dark);
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .niseko-header-nav {
+    display: none;
+  }
 }
 
 .niseko-hero {
@@ -981,6 +991,113 @@ h3 {
   font-size: 12px;
   letter-spacing: 0.08em;
   backdrop-filter: blur(12px);
+}
+
+.niseko-yotei-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 250, 0.98), rgba(244, 247, 248, 0.92)),
+    #fffdfa;
+}
+
+.niseko-yotei-section::before {
+  position: absolute;
+  left: -14vw;
+  top: 14%;
+  z-index: -1;
+  width: min(76vw, 760px);
+  height: min(42vw, 420px);
+  clip-path: polygon(0 100%, 38% 42%, 50% 18%, 62% 42%, 100% 100%);
+  background: linear-gradient(180deg, rgba(120, 151, 169, 0.12), rgba(255, 255, 255, 0));
+  content: "";
+}
+
+.niseko-yotei-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.niseko-yotei-main,
+.niseko-yotei-moments figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--niseko-stone);
+  box-shadow: 0 22px 56px rgba(23, 40, 51, 0.1);
+}
+
+.niseko-yotei-main {
+  min-height: 340px;
+}
+
+.niseko-yotei-main img,
+.niseko-yotei-moments img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.74) contrast(0.94) brightness(1.02);
+}
+
+.niseko-yotei-main img {
+  min-height: 340px;
+  object-position: 58% 62%;
+}
+
+.niseko-yotei-main::after,
+.niseko-yotei-moments figure::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(23, 40, 51, 0.04), rgba(23, 40, 51, 0.2)),
+    rgba(120, 151, 169, 0.08);
+  content: "";
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.niseko-yotei-main figcaption,
+.niseko-yotei-moments figcaption {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(23, 40, 51, 0.42);
+  color: #fffdfa;
+  padding: 8px 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(12px);
+}
+
+.niseko-yotei-moments {
+  display: grid;
+  gap: 14px;
+}
+
+.niseko-yotei-moments figure {
+  min-height: 220px;
+}
+
+.niseko-yotei-moments img {
+  min-height: 220px;
+}
+
+.niseko-yotei-moments figure:nth-child(1) img {
+  object-position: 50% 72%;
+}
+
+.niseko-yotei-moments figure:nth-child(2) img {
+  object-position: 50% 74%;
+}
+
+.niseko-yotei-moments figure:nth-child(3) img {
+  object-position: 50% 72%;
 }
 
 .niseko-amenities {
@@ -1282,6 +1399,33 @@ h3 {
 
   .niseko-gallery img {
     min-height: 100%;
+  }
+
+  .niseko-yotei-layout {
+    grid-template-columns: minmax(0, 1.42fr) minmax(280px, 0.78fr);
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .niseko-yotei-main {
+    height: 640px;
+    min-height: 640px;
+  }
+
+  .niseko-yotei-main img {
+    min-height: 640px;
+  }
+
+  .niseko-yotei-moments {
+    height: 640px;
+    grid-template-rows: 1.18fr 1fr 1fr;
+    gap: 18px;
+  }
+
+  .niseko-yotei-moments figure,
+  .niseko-yotei-moments img {
+    height: 100%;
+    min-height: 0;
   }
 
   .niseko-amenity-list {

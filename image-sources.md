@@ -39,6 +39,14 @@
   - `https://www.pexels.com/photo/village-covered-with-snow-2031689/`
   - ニセコの雪の街並み写真。Pexels Licenseで商用利用可、クレジット任意。
 
+### 羊蹄山
+
+- `assets/facilities/niseko/yotei/yotei-winter-forest.jpg`
+- `assets/facilities/niseko/yotei/yotei-winter-sun.jpg`
+- `assets/facilities/niseko/yotei/yotei-summer-field.jpg`
+- `assets/facilities/niseko/yotei/yotei-summer-lake.jpg`
+- 2026-05-21時点で、運営者関係者から提供された羊蹄山写真をWeb表示向けにリサイズして保存。
+
 ## 運用メモ
 
 - Airbnb画像は公開ページの直リンクをHTMLに埋め込まず、ローカルの `assets/` に保存して参照する
