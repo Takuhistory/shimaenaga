@@ -49,8 +49,9 @@
 
 ### ブランドイラスト
 
-- `assets/brand/shimaenaga-symbol.svg`
-- シマエナガを控えめなブランドサインとして使うため、このプロトタイプ内で作成したSVGイラスト。
+- `assets/brand/shimaenaga-birds.png`
+- `assets/brand/shimaenaga-birds-mark.png`
+- 2026-05-21時点で、シマエナガニセコのブランドサインとして生成したラスター画像。白ベースのヒーローに馴染むよう、淡い雪色背景と控えめな水彩調で作成。`shimaenaga-birds-mark.png` はヘッダー表示用に中央をトリミングした画像。
 
 ## 運用メモ
 

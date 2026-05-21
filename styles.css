@@ -686,6 +686,17 @@ h3 {
   gap: 14px;
 }
 
+.niseko-brand-birds {
+  width: 92px;
+  height: 54px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.92;
+  filter: saturate(0.78) contrast(0.98) brightness(1.04);
+  mix-blend-mode: multiply;
+}
+
 .niseko-brand-mark {
   width: 42px;
   height: 42px;
@@ -733,7 +744,7 @@ h3 {
   overflow: hidden;
   border-bottom: 1px solid var(--niseko-line);
   background:
-    linear-gradient(126deg, rgba(246, 248, 248, 0.97) 0%, rgba(246, 248, 248, 0.9) 42%, rgba(120, 151, 169, 0.34) 100%),
+    linear-gradient(126deg, rgba(246, 248, 248, 0.98) 0%, rgba(246, 248, 248, 0.9) 44%, rgba(120, 151, 169, 0.26) 100%),
     var(--niseko-snow);
 }
 
@@ -743,9 +754,9 @@ h3 {
   z-index: -1;
   content: "";
   background:
-    linear-gradient(90deg, rgba(246, 248, 248, 0.98) 0%, rgba(246, 248, 248, 0.85) 46%, rgba(246, 248, 248, 0.28) 100%),
-    linear-gradient(0deg, rgba(23, 40, 51, 0.24), rgba(23, 40, 51, 0) 46%),
-    radial-gradient(circle at 78% 72%, rgba(242, 223, 199, 0.34), rgba(242, 223, 199, 0) 34%);
+    linear-gradient(90deg, rgba(246, 248, 248, 0.99) 0%, rgba(246, 248, 248, 0.88) 46%, rgba(246, 248, 248, 0.38) 72%, rgba(246, 248, 248, 0.12) 100%),
+    linear-gradient(0deg, rgba(23, 40, 51, 0.22), rgba(23, 40, 51, 0) 48%),
+    radial-gradient(circle at 74% 70%, rgba(242, 223, 199, 0.28), rgba(242, 223, 199, 0) 34%);
 }
 
 .niseko-hero-bg {
@@ -754,37 +765,36 @@ h3 {
   z-index: -4;
   width: 100%;
   height: 100%;
-  opacity: 0.62;
+  opacity: 0.82;
   object-fit: cover;
-  object-position: 52% 72%;
-  filter: saturate(0.72) contrast(0.94) brightness(1.04);
+  object-position: 58% 58%;
+  filter: saturate(0.64) contrast(0.92) brightness(1.1);
 }
 
 .niseko-hero-room {
   position: absolute;
-  right: clamp(18px, 5vw, 70px);
-  bottom: clamp(24px, 7vh, 76px);
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 0;
-  width: min(74vw, 520px);
-  height: min(34svh, 320px);
+  width: 100%;
+  height: 42svh;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 253, 250, 0.48);
-  border-radius: 4px;
-  background: rgba(255, 253, 250, 0.28);
-  box-shadow: 0 30px 90px rgba(23, 40, 51, 0.24);
-  opacity: 0.72;
+  opacity: 0.38;
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 26%, #000 100%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 26%, #000 100%);
 }
 
 .niseko-hero-room::after {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(120, 151, 169, 0.04), rgba(23, 40, 51, 0.18)),
-    rgba(255, 253, 250, 0.08);
+    linear-gradient(90deg, rgba(246, 248, 248, 0.94) 0%, rgba(246, 248, 248, 0.58) 44%, rgba(246, 248, 248, 0.12) 76%),
+    linear-gradient(180deg, rgba(255, 253, 250, 0.24), rgba(120, 151, 169, 0.08)),
+    linear-gradient(0deg, rgba(23, 40, 51, 0.16), rgba(23, 40, 51, 0) 44%);
   content: "";
-  mix-blend-mode: multiply;
   pointer-events: none;
 }
 
@@ -792,23 +802,12 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 54% 50%;
-  filter: saturate(0.82) contrast(0.96) brightness(1.03);
+  object-position: 53% 50%;
+  filter: saturate(0.78) contrast(0.95) brightness(1.08);
 }
 
 .niseko-hero-room figcaption {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  z-index: 2;
-  border-radius: 999px;
-  background: rgba(23, 40, 51, 0.48);
-  color: rgba(255, 253, 250, 0.9);
-  padding: 8px 12px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  backdrop-filter: blur(12px);
+  display: none;
 }
 
 .niseko-yotei {
@@ -887,28 +886,6 @@ h3 {
   color: rgba(23, 40, 51, 0.72);
   font-size: 16px;
   line-height: 2.05;
-}
-
-.niseko-bird-symbol {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  gap: 14px;
-  margin: 26px 0 0;
-}
-
-.niseko-bird-symbol img {
-  width: 92px;
-  opacity: 0.86;
-}
-
-.niseko-bird-symbol figcaption {
-  margin: 0;
-  color: rgba(23, 40, 51, 0.52);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
 }
 
 .niseko-hero-action {
@@ -1437,9 +1414,19 @@ h3 {
   }
 
   .niseko-hero-room {
-    width: min(48vw, 560px);
-    height: min(42svh, 420px);
-    opacity: 0.92;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: min(52vw, 720px);
+    height: auto;
+    opacity: 0.66;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 18%, rgba(0, 0, 0, 0.62) 42%, #000 64%, #000 100%);
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 18%, rgba(0, 0, 0, 0.62) 42%, #000 64%, #000 100%);
+  }
+
+  .niseko-hero-room img {
+    object-position: 50% 50%;
   }
 
   .niseko-hero-action {
@@ -1542,22 +1529,24 @@ h3 {
 
 @media (min-width: 1040px) {
   .niseko-hero-bg {
-    opacity: 0.74;
+    opacity: 0.9;
+    object-position: 59% 56%;
   }
 
   .niseko-hero::after {
     background:
-      linear-gradient(90deg, rgba(246, 248, 248, 0.99) 0%, rgba(246, 248, 248, 0.93) 39%, rgba(246, 248, 248, 0.18) 78%, rgba(246, 248, 248, 0.1) 100%),
-      linear-gradient(0deg, rgba(23, 40, 51, 0.26), rgba(23, 40, 51, 0) 52%),
-      radial-gradient(circle at 73% 72%, rgba(242, 223, 199, 0.38), rgba(242, 223, 199, 0) 30%);
+      linear-gradient(90deg, rgba(246, 248, 248, 0.99) 0%, rgba(246, 248, 248, 0.92) 36%, rgba(246, 248, 248, 0.42) 61%, rgba(246, 248, 248, 0.1) 100%),
+      linear-gradient(0deg, rgba(23, 40, 51, 0.24), rgba(23, 40, 51, 0) 52%),
+      radial-gradient(circle at 72% 72%, rgba(242, 223, 199, 0.34), rgba(242, 223, 199, 0) 31%);
   }
 
   .niseko-hero-room {
-    right: min(6vw, 88px);
-    bottom: min(9vh, 92px);
-    width: min(42vw, 600px);
-    height: min(38svh, 430px);
-    opacity: 0.96;
+    width: min(50vw, 760px);
+    opacity: 0.72;
+  }
+
+  .niseko-hero-room img {
+    object-position: 52% 50%;
   }
 
   .niseko-resort .section {
