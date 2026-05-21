@@ -24,6 +24,21 @@
 - `https://www.airbnb.jp/rooms/1382461147484335396`
 - 2026-05-20時点で、上記ページから取得できる施設写真を `airbnb/` 配下に保存
 
+### ニセコ周辺・アクティビティ
+
+- `assets/facilities/niseko/activity/snowboarding-unsplash-terra.jpg`
+  - Unsplash / TERRA
+  - `https://unsplash.com/photos/a-person-skiing-down-a-mountain-Rz1aUZ5CFj4`
+  - ニセコで撮影されたスノーボード写真。Unsplash Licenseで商用利用可、クレジット任意。
+- `assets/facilities/niseko/activity/snow-field-pexels-erik-schereder.jpg`
+  - Pexels / Erik Schereder
+  - `https://www.pexels.com/photo/serene-snowy-landscape-in-niseko-japan-30473642/`
+  - ニセコの雪原写真。Pexels Licenseで商用利用可、クレジット任意。
+- `assets/facilities/niseko/activity/snow-village-pexels-matt-hardy.jpg`
+  - Pexels / Matt Hardy
+  - `https://www.pexels.com/photo/village-covered-with-snow-2031689/`
+  - ニセコの雪の街並み写真。Pexels Licenseで商用利用可、クレジット任意。
+
 ## 運用メモ
 
 - Airbnb画像は公開ページの直リンクをHTMLに埋め込まず、ローカルの `assets/` に保存して参照する

@@ -1041,12 +1041,28 @@ h3 {
 
 .niseko-around-grid article {
   min-height: 240px;
+  overflow: hidden;
   border: 1px solid rgba(51, 86, 107, 0.12);
   border-radius: 4px;
   background:
     linear-gradient(180deg, rgba(255, 253, 250, 0.88), rgba(255, 253, 250, 0.68)),
     rgba(255, 255, 255, 0.74);
   padding: 26px;
+}
+
+.niseko-around-grid .niseko-around-card {
+  padding: 0;
+}
+
+.niseko-around-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: saturate(0.86) contrast(0.96);
+}
+
+.niseko-around-card div {
+  padding: 24px;
 }
 
 .niseko-around-grid span {
@@ -1058,7 +1074,7 @@ h3 {
 }
 
 .niseko-around-grid h3 {
-  margin-top: 42px;
+  margin-top: 36px;
   color: var(--niseko-ink);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 28px;
@@ -1244,6 +1260,10 @@ h3 {
 
   .niseko-around-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .niseko-around-card img {
+    height: 260px;
   }
 
   .niseko-footer-inner {
