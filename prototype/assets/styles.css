@@ -759,6 +759,14 @@ h3 {
     radial-gradient(circle at 74% 70%, rgba(242, 223, 199, 0.28), rgba(242, 223, 199, 0) 34%);
 }
 
+.niseko-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  content: "";
+  pointer-events: none;
+}
+
 .niseko-hero-bg {
   position: absolute;
   top: 0;
@@ -1429,6 +1437,17 @@ h3 {
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 8%, rgba(0, 0, 0, 0.76) 28%, #000 46%, #000 100%);
   }
 
+  .niseko-hero::before {
+    right: 30%;
+    background:
+      linear-gradient(180deg, rgba(246, 248, 248, 0) 0%, rgba(246, 248, 248, 0) 43%, rgba(246, 248, 248, 0.58) 53%, rgba(246, 248, 248, 0.46) 62%, rgba(246, 248, 248, 0) 74%);
+  }
+
+  .niseko-hero-bg {
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 72%, rgba(0, 0, 0, 0.7) 84%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 72%, rgba(0, 0, 0, 0.7) 84%, rgba(0, 0, 0, 0) 100%);
+  }
+
   .niseko-hero-room img {
     object-position: 50% 50%;
   }
@@ -1537,6 +1556,14 @@ h3 {
     width: 74%;
     opacity: 0.92;
     object-position: 59% 56%;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 68%, rgba(0, 0, 0, 0.66) 82%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 68%, rgba(0, 0, 0, 0.66) 82%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .niseko-hero::before {
+    right: 26%;
+    background:
+      linear-gradient(180deg, rgba(246, 248, 248, 0) 0%, rgba(246, 248, 248, 0) 42%, rgba(246, 248, 248, 0.66) 52%, rgba(246, 248, 248, 0.5) 61%, rgba(246, 248, 248, 0) 73%);
   }
 
   .niseko-hero::after {
