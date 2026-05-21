@@ -1058,11 +1058,48 @@ h3 {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  filter: saturate(0.86) contrast(0.96);
+  filter: saturate(0.72) contrast(0.94) brightness(0.98);
 }
 
 .niseko-around-card div {
   padding: 24px;
+}
+
+.niseko-around-card {
+  position: relative;
+}
+
+.niseko-around-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 1;
+  height: 220px;
+  background:
+    linear-gradient(180deg, rgba(120, 151, 169, 0.2), rgba(23, 40, 51, 0.08)),
+    rgba(215, 221, 217, 0.08);
+  content: "";
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.niseko-around-card > div {
+  position: relative;
+  z-index: 2;
+}
+
+.niseko-around-card:nth-child(1) img {
+  width: 132%;
+  max-width: none;
+  object-position: 42% 30%;
+  transform: translateX(-3%);
+}
+
+.niseko-around-card:nth-child(2) img {
+  object-position: 52% 70%;
+}
+
+.niseko-around-card:nth-child(3) img {
+  object-position: 50% 45%;
 }
 
 .niseko-around-grid span {
@@ -1263,6 +1300,10 @@ h3 {
   }
 
   .niseko-around-card img {
+    height: 260px;
+  }
+
+  .niseko-around-card::before {
     height: 260px;
   }
 
