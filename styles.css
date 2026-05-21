@@ -761,13 +761,17 @@ h3 {
 
 .niseko-hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: -8%;
   z-index: -4;
-  width: 100%;
+  width: 114%;
+  max-width: none;
   height: 100%;
   opacity: 0.82;
   object-fit: cover;
-  object-position: 58% 58%;
+  object-position: 56% 58%;
   filter: saturate(0.64) contrast(0.92) brightness(1.1);
 }
 
@@ -1529,8 +1533,10 @@ h3 {
 
 @media (min-width: 1040px) {
   .niseko-hero-bg {
+    left: -14%;
+    width: 116%;
     opacity: 0.9;
-    object-position: 59% 56%;
+    object-position: 55% 56%;
   }
 
   .niseko-hero::after {
