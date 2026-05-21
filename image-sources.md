@@ -47,6 +47,11 @@
 - `assets/facilities/niseko/yotei/yotei-summer-lake.jpg`
 - 2026-05-21時点で、運営者関係者から提供された羊蹄山写真をWeb表示向けにリサイズして保存。
 
+### ブランドイラスト
+
+- `assets/brand/shimaenaga-symbol.svg`
+- シマエナガを控えめなブランドサインとして使うため、このプロトタイプ内で作成したSVGイラスト。
+
 ## 運用メモ
 
 - Airbnb画像は公開ページの直リンクをHTMLに埋め込まず、ローカルの `assets/` に保存して参照する
